@@ -18,16 +18,23 @@
     <script>
         let textblock = document.querySelector(".block").querySelectorAll("p")
 
-        for(let i = 0; i < textblock.length; i++){
-            let textChiffré = chiffrement(textblock[i].textContent, 1)
-            let textDechiffré = dechiffrement(textChiffré, 1)
-            effetDechifrement(
-                textblock[i],
-                textChiffré,
-                textDechiffré
-                )   
-            }
+        textblock.forEach(function(element){
+            element.addEventListener("mouseover", function(){
+                for(let i = 0; i < textblock.length; i++){
+                    let textChiffré = chiffrement(textblock[i].textContent, 1)
+                    let textDechiffré = dechiffrement(textChiffré, 1)
+                    effetDechifrement(
+                        textblock[i],
+                        textChiffré,
+                        textDechiffré
+                        )   
+                    }
+            })
+        })
 
+        if (navigator.userAgent.match(/chrome|chromium|crios/i) == null){
+            alert("Attention, ce site fonctionne uniquement sur Chrome. \n Veuillez me pardonner ^^")
+        }
     </script>
 </body>
 </html>
