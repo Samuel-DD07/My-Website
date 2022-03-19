@@ -1,5 +1,5 @@
 let block = document.querySelector(".block")
-let txt = "01"
+let txt = "@&é'§è!çà-#1234567890°_azertyuiop^$qsdfghjklmù`<wxcvbn,;:=AZERTYUIOP¨*QSDFGHJKLM%£>WXCVBN?./+"
 
 block.style.backgroundImage = "url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80')"
 block.style.backgroundSize = "cover"
