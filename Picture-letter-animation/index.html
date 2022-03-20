@@ -11,6 +11,8 @@
     <div class="content">
         <div class="block">
         </div>
+
+        <h1>Picture Decryption</h1>
     </div>
 
     <script src="index.js"></script>
@@ -19,7 +21,7 @@
         let textblock = document.querySelector(".block").querySelectorAll("p")
 
         textblock.forEach(function(element){
-            element.addEventListener("mouseover", function(){
+            element.addEventListener("click", function(){
                 for(let i = 0; i < textblock.length; i++){
                     let textChiffré = chiffrement(textblock[i].textContent, 1)
                     let textDechiffré = dechiffrement(textChiffré, 1)
